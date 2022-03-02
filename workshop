@@ -1,0 +1,162 @@
+alex1889@MacBook-Pro-de-Alexandre / % cd /tmp
+alex1889@MacBook-Pro-de-Alexandre /tmp % pwd
+/tmp
+alex1889@MacBook-Pro-de-Alexandre /tmp % ls
+com.apple.installerIn3vIf2I
+com.apple.launchd.NcYtaZUs3u
+com.google.Keystone
+mysql.sock
+mysql.sock.lock
+mysqlx.sock
+mysqlx.sock.lock
+alex1889@MacBook-Pro-de-Alexandre /tmp % echo "Hello, world" > helloWorld.txt
+alex1889@MacBook-Pro-de-Alexandre /tmp % ls
+com.apple.installerIn3vIf2I
+com.apple.launchd.NcYtaZUs3u
+com.google.Keystone
+helloWorld.txt
+mysql.sock
+mysql.sock.lock
+mysqlx.sock
+mysqlx.sock.lock
+alex1889@MacBook-Pro-de-Alexandre /tmp % cat helloWorld.txt
+Hello, world
+alex1889@MacBook-Pro-de-Alexandre /tmp % echo "Hello there" > helloWorld.txt
+alex1889@MacBook-Pro-de-Alexandre /tmp % cat helloWorld.txt
+Hello there
+alex1889@MacBook-Pro-de-Alexandre /tmp % mv helloWorld.txt helloThere.txt
+alex1889@MacBook-Pro-de-Alexandre /tmp % cat helloWorld.txt
+cat: helloWorld.txt: No such file or directory
+alex1889@MacBook-Pro-de-Alexandre /tmp % cat helloThere.txt 
+Hello there
+alex1889@MacBook-Pro-de-Alexandre /tmp % rm helloThere.txt
+alex1889@MacBook-Pro-de-Alexandre /tmp % ls
+com.apple.installerIn3vIf2I
+com.apple.launchd.NcYtaZUs3u
+com.google.Keystone
+mysql.sock
+mysql.sock.lock
+mysqlx.sock
+mysqlx.sock.lock
+alex1889@MacBook-Pro-de-Alexandre /tmp % cd /usr/local
+alex1889@MacBook-Pro-de-Alexandre local % ls
+bin
+git
+lmm
+mysql
+mysql-8.0.28-macos11-arm64
+share
+alex1889@MacBook-Pro-de-Alexandre local % cd /opt
+alex1889@MacBook-Pro-de-Alexandre /opt % mkdir tacosfolder
+mkdir: tacosfolder: Permission denied
+alex1889@MacBook-Pro-de-Alexandre /opt % ls
+homebrew	local
+alex1889@MacBook-Pro-de-Alexandre /opt % cd usr/local
+cd: no such file or directory: usr/local
+alex1889@MacBook-Pro-de-Alexandre /opt % cd /opt          
+alex1889@MacBook-Pro-de-Alexandre /opt % sudo             
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u
+            user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U
+            user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-C num] [-D directory] [-g group] [-h
+            host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C num] [-D directory] [-g group] [-h
+            host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] file ...
+alex1889@MacBook-Pro-de-Alexandre /opt % sudo        
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u
+            user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U
+            user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-C num] [-D directory] [-g group] [-h
+            host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C num] [-D directory] [-g group] [-h
+            host] [-p prompt] [-R directory] [-T timeout] [-u
+            user] file ...
+alex1889@MacBook-Pro-de-Alexandre /opt % sudo mkdir tacosfolder
+Password:
+alex1889@MacBook-Pro-de-Alexandre /opt % ls
+homebrew	local		tacosfolder
+alex1889@MacBook-Pro-de-Alexandre /opt % cd tacosfolder
+alex1889@MacBook-Pro-de-Alexandre tacosfolder % ls
+alex1889@MacBook-Pro-de-Alexandre tacosfolder % cd ..
+alex1889@MacBook-Pro-de-Alexandre /opt % sudo rm -r tacosfolder
+alex1889@MacBook-Pro-de-Alexandre /opt % ls
+homebrew	local
+alex1889@MacBook-Pro-de-Alexandre /opt % cd ~/Documents       
+alex1889@MacBook-Pro-de-Alexandre Documents % ls
+Fuji Xt-1 Pics	Musica		Smaart v8
+LTspice		OCTAVE		VSCODE
+MATLAB		REAPER Media
+alex1889@MacBook-Pro-de-Alexandre Documents % pws
+zsh: command not found: pws
+alex1889@MacBook-Pro-de-Alexandre Documents % pwd
+/Users/alex1889/Documents
+alex1889@MacBook-Pro-de-Alexandre Documents % mkdir chalet
+alex1889@MacBook-Pro-de-Alexandre Documents % touch armchair1
+alex1889@MacBook-Pro-de-Alexandre Documents % ls
+Fuji Xt-1 Pics	OCTAVE		armchair1
+LTspice		REAPER Media	chalet
+MATLAB		Smaart v8
+Musica		VSCODE
+alex1889@MacBook-Pro-de-Alexandre Documents % cd ^/chalet
+cd: no such file or directory: ^/chalet
+alex1889@MacBook-Pro-de-Alexandre Documents % cd ~/chalet
+cd: no such file or directory: /Users/alex1889/chalet
+alex1889@MacBook-Pro-de-Alexandre Documents % cd ~/Documents 
+alex1889@MacBook-Pro-de-Alexandre Documents % mv armchair1 chalet
+alex1889@MacBook-Pro-de-Alexandre Documents % ls
+Fuji Xt-1 Pics	Musica		Smaart v8
+LTspice		OCTAVE		VSCODE
+MATLAB		REAPER Media	chalet
+
+alex1889@MacBook-Pro-de-Alexandre Documents % cd ~/chalet
+cd: no such file or directory: /Users/alex1889/chalet
+alex1889@MacBook-Pro-de-Alexandre Documents % cd ~/Documents/chalet
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1
+alex1889@MacBook-Pro-de-Alexandre chalet % mkdir armour cabinets cupboards
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1	cabinets
+armour		cupboards
+alex1889@MacBook-Pro-de-Alexandre chalet % cd cabinets 
+alex1889@MacBook-Pro-de-Alexandre cabinets % ls
+alex1889@MacBook-Pro-de-Alexandre cabinets % cd ..
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1	cabinets
+armour		cupboards
+alex1889@MacBook-Pro-de-Alexandre chalet % cp armchair1 armchair2
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1	armour		cupboards
+armchair2	cabinets
+alex1889@MacBook-Pro-de-Alexandre chalet % touch trinkets
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1	armour		cupboards
+armchair2	cabinets	trinkets
+alex1889@MacBook-Pro-de-Alexandre chalet % mv ../trinkets
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+alex1889@MacBook-Pro-de-Alexandre chalet % ls
+armchair1	armour		cupboards
+armchair2	cabinets	trinkets
+alex1889@MacBook-Pro-de-Alexandre chalet % cd ~/Documents/chalet/cabinets 
+alex1889@MacBook-Pro-de-Alexandre cabinets % mv ../trinkets .
+alex1889@MacBook-Pro-de-Alexandre cabinets % ls
+trinkets
+alex1889@MacBook-Pro-de-Alexandre cabinets % cp trinkets cupboards
+alex1889@MacBook-Pro-de-Alexandre cabinets % cd ~/Documents/chalet
+alex1889@MacBook-Pro-de-Alexandre chalet % cd ~/Documents
+alex1889@MacBook-Pro-de-Alexandre Documents % find chalet
+chalet
+chalet/armchair1
+chalet/cabinets
+chalet/cabinets/cupboards
+chalet/cabinets/trinkets
+chalet/cupboards
+chalet/armchair2
+chalet/armour
